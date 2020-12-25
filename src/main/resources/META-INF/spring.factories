@@ -1,14 +1,7 @@
 # Auto Configure
-#org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.example.s3config.loader.S3ConfigAutoConfiguration
 #org.springframework.cloud.config.client.ConfigClientAutoConfiguration
 # Bootstrap components
-#org.springframework.cloud.bootstrap.BootstrapConfiguration=\
-#org.springframework.cloud.config.client.ConfigServiceBootstrapConfiguration,\
-#org.springframework.cloud.config.client.DiscoveryClientConfigServiceBootstrapConfiguration
+org.springframework.cloud.bootstrap.BootstrapConfiguration=com.example.s3config.loader.S3ConfigBootstrapConfiguration
 
-# ConfigData Location Resolvers
-#org.springframework.boot.context.config.ConfigDataLocationResolver=\
-#org.springframework.cloud.config.client.ConfigServerConfigDataLocationResolver
-
-# ConfigData Loaders
-org.springframework.boot.context.config.ConfigDataLoader=com.example.config.server.ConfigLoader
